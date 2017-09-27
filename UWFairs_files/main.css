@@ -1,0 +1,201 @@
+p, h1, h2, h3, h4, h5, a, li {
+	font-family: 'museo-sans', sans-serif;
+}
+
+button:focus {outline:0;}
+
+.header {
+	padding: 50px 0px 75px 0px;
+	/* background-image: url('https://bioe.uw.edu/wp-content/uploads/2013/07/uw-slider-4.jpg');
+	background-size: cover; */
+	background-color: #26003d;
+}
+
+.header h1 {
+	color: #ffffff;
+	font-weight:800;
+	font-size:30px;
+	margin-top:0px;
+}
+
+.header h2 {
+	color: #ffffff;
+	font-weight:100;
+	font-size:18px;
+	margin-top:0px;
+}
+
+.header a {
+	color: #ffffff;
+	font-weight:600;
+}
+
+.header a:hover {
+	text-decoration:none;
+	opacity:0.8;
+}
+
+.header p {
+	color: #ffffff;
+	margin-top:5px;
+}
+
+.tagline {
+	margin-top: 45px;
+}
+
+.tagline h1 {
+	font-weight:550;
+	color: #ffffff;
+	line-height:55px;
+	font-size: 40px;
+}
+
+.events {
+	margin-top:60px;
+}
+
+.events h2 {
+	margin-top:5px;
+	font-size:18px;
+	font-weight:600;
+}
+
+.events h3 {
+	margin-top:5px;
+	font-size:18px;
+}
+
+.events h4 {
+	font-size:14px;
+	color: #7f8c8d;
+}
+
+.go {
+	background-color: transparent;
+	padding: 10px 16% 10px 16%;
+	border: 0px solid #7f8c8d;
+	color:#7f8c8d;
+	font-size:14px;
+	margin-top:5px;
+	border-right: 2px #ff0000;
+}
+
+.go:hover {
+	opacity:0.8;
+}
+
+.go-dark {
+	background-color:transparent;
+	padding: 10px 40px 10px 40px;
+	border: 2px solid white;
+	color: white;
+	border-radius: 3px;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.go-dark:hover {
+	opacity:0.8;
+}
+
+.line {
+	border: 1px solid #7f8c8d;
+	height:1px;
+}
+
+.details {
+	background-color: #26003d;
+	padding: 30px 20px 30px 40px;
+}
+
+.details h1 {
+	margin-top:0px;
+	color: white;
+	font-weight:600;
+	font-size:24px;
+}
+
+.details h3 {
+	color:white;
+	font-size:16px;
+	font-weight:600;
+	display:inline-block;
+}
+
+.details p {
+	color:white;
+	line-height: 23px;
+}
+
+.details li {
+	color:white;
+	line-height: 30px;
+}
+
+.email {
+	background-color: #26003d;
+	padding: 30px 20px 30px 40px;
+}
+
+.email p {
+	color: white;
+}
+
+.email h1{
+	color:white;
+	font-size:24px;
+	font-weight:600;
+	display:inline;
+}
+
+.email h3 {
+	margin-top:15px;
+	color:white;
+	font-size:16px;
+}
+
+.attend {
+	cursor: pointer;
+	margin-top: 30px;
+	background-color:#F9DC5C;
+	padding: 15px 0px 15px 0px;
+
+}
+
+.attend h1 {
+	margin-bottom:0px;
+	color:#393E41;
+}
+
+.attend: hover {
+	opacity:0.8;
+}
+
+.card {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.mobileGo {
+	color:#393E41;
+	font-weight:600;
+	background-color: #F9DC5C;
+	width:100%;
+	padding: 10px 15px 10px 15px;
+	border:0px;
+}
+
+.footer {
+	margin: 40px 0px 20px 0px;
+	color: #7f8c8d;
+}
+
+.footer a {
+	color: #58108c;
+}
+
+.footer a:hover {
+	text-decoration:none;
+	opacity:0.8;
+}
