@@ -440,6 +440,92 @@
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/intel.png" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Intel InfoSession</h2>
+                <h4 class="ng-binding">Oct. 9, 2017, Electrical Engineering Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden13 = !showHidden13;showEmail13=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail13 = !showEmail13;showHidden13=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail13">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail13 = !showEmail13">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Intel InfoSession">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden13">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Intel InfoSession</h1>
+                <p class="ng-binding">6:00PM Monday, October 9th, 2017 @ Electrical Engineering Building Rm 125</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden13 = !showHidden13">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Meet with Intel recruting at this info session! Learn about the challanging and competitive workshop that Intel offers, and about full-time and internship positions at Intel. All majors welcome.</p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden13 = !showHidden13;showEmail13 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
                 <img ng-src="./UWFairs_files/google.png" width="60px">
               </div>
               <div class="col-xs-9">
