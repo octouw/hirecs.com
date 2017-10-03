@@ -45,7 +45,7 @@
   <meta property="og:title" content="Find Upcoming Software Recruiting Fairs at UW">
   <meta property="og:description" content="A one-stop complication of all recruiting and networking events for students at University of Washington.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://hirecs.com">
+  <meta property="og:url" content="http://hirecs.com"
   <meta property="og:image" content="https://www.washington.edu/studyabroad/files/2015/02/Cherries.jpg">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
@@ -164,7 +164,6 @@
     <div class="container">
       <div class="tagline row col-sm-10 col-sm-offset-1">
         <center>
-          <br><br>
           <h1>Upcoming Recruiting Fairs</h1>
           <h2>Find and attend upcoming CSE, Infomatics, and Engineering Career and Networking Fairs at UW</h2>
           <br>
@@ -178,6 +177,91 @@
   <div class="events">
     <div class="container">
       <div class="row">
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/voy.jpg" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Voyager Office Hours</h2>
+                <h4 class="ng-binding">Oct. 4, 2017, Paul G. Allen Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden15 = !showHidden15;showEmail15=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail15 = !showEmail15;showHidden15=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail15">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail15 = !showEmail15">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Voyager Office Hours">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden15">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Voyager Office Hours</h1>
+                <p class="ng-binding">11:00AM Wednesday, October 4th, 2017 @ Paul G. Allen Atrium</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden15 = !showHidden15">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Voyager Capital will resume their open venture office hour first Wednesdays at 11 am in the CSE atrium. Any school affiliates with an interest in starting or joining a startup company are welcome to join to discuss things like what it takes to form a corporation, how to raise investor capital, what kind of roles there are for CSE grads in startups, etc.</p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+              </div>
+            </div>
+            <a ng-click="showHidden15 = !showHidden15;showEmail15 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
         <div class="singleEvent ng-scope">
           <div class="event">
             <div class="row">
@@ -758,7 +842,7 @@
             <div class="row">
               <div class="col-sm-5">
                 <h3><b>ABOUT</b></h3>
-                <p class="ng-binding">Come chat with AirBnB engineers about engineering methodologies, application architecture, and the technical details of building a large JavaScript application for a tiny screen. Learn about building solutions to problems that need to be scalable, performant, and elegant, and engage with AirBnB engineers about new grad and intern oppertunities at AirBnB.</p>
+                <p class="ng-binding">Come chat with AirBnB engineers about engineering methodologies, application architecture, and the technical details of building a large JavaScript application for a tiny screen. Learn about building solutions to problems that need to be scalable, performant, and elegant, and engage with AirBnB engineers about new grad and intern oppertunities at AirBnB. This event is geared towards ACM-W members.</p>
               </div>
               <div class="col-sm-5 col-sm-offset-1">
                 <h3><b>EVENT DETAILS</b></h3>
@@ -856,6 +940,92 @@
               </div>
             </div>
             <a ng-click="showHidden2 = !showHidden2;showEmail2 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/redfin.jpg" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Redfin Tech Talk</h2>
+                <h4 class="ng-binding">Oct. 17, 2017, Electrical Engineering Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden16 = !showHidden16;showEmail16=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail16 = !showEmail16;showHidden16=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail16">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail16 = !showEmail16">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Redfin Tech Talk">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden16">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Redfin Tech Talk</h1>
+                <p class="ng-binding">6:00PM Tuesday, October 17th, 2017 @ Electrical Engineering Building Rm 125</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden16 = !showHidden16">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Connect with recruiters and engineers at the Redfin tech talk at University of Washington! Learn what it's like to work at one of the largest real estate employers in the country, and get your resume reviewed for full-time and internship positions at Redfin.</p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden16 = !showHidden16;showEmail16 = true">
               <div class="attend">
                 <div class="row">
                   <div class="col-sm-12">
