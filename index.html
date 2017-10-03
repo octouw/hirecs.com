@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="csfair" class="ng-scope wf-museosans-n1-active wf-museosans-n3-active wf-museosans-i7-active wf-museosans-n9-active wf-museosans-i3-active wf-museosans-n7-active wf-active">
+<html lang="en" ng-app="csfair" class="ng-scope wf-museosans-n1-active wf-museosans-n3-active wf-museosans-i7-active wf-museosans-n9-active wf-museosans-i3-active wf-museosans-n7-active wf-active" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -39,13 +39,14 @@
   <link rel="stylesheet" href="./UWFairs_files/avgrund.css">
   <link rel="stylesheet" href="./UWFairs_files/w3.css">
   <meta name="title" content="UW Recruiting Fairs">
-  <meta name="description" content="UW Recruiting Fairs is your one-stop source for everything software recruting at UW-Seattle.">
-  <meta name="keywords" content="UW,Recruiting,Fairs,CS,Software,Informatics,CSE,Job,Internship,Fair,Upcoming">
-  <meta property="og:site_name" content="UW Recruting Fairs">
-  <meta property="og:title" content="UW Recruting - Find Upcoming Software Recruiting Fairs at UW-Seattle">
-  <meta property="og:description" content="Find out about tech info sessions, career fairs, and  other CS related events all in one place, made for students by students.">
+  <meta name="description" content="UW Recruiting Fairs is a one-stop source for everything software recruiting at UW.">
+  <meta name="keywords" content="UW,Recruiting,Fairs,CS,Software,CSE,Job,Internship,Fair,Upcoming">
+  <meta property="og:site_name" content="UW recruiting Fairs">
+  <meta property="og:title" content="Find Upcoming Software Recruiting Fairs at UW">
+  <meta property="og:description" content="A one-stop complication of all recruiting and networking events for students at University of Washington.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://csfairs.com">
+  <meta property="og:url" content="http://hirecs.com"
+  <meta property="og:image" content="https://www.washington.edu/studyabroad/files/2015/02/Cherries.jpg">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -163,9 +164,8 @@
     <div class="container">
       <div class="tagline row col-sm-10 col-sm-offset-1">
         <center>
-          <br><br>
           <h1>Upcoming Recruiting Fairs</h1>
-          <h2>Find and attend upcoming CSE, Infomatics, and Engineering Career and Networking Fairs at UW</h2>
+          <h2>Find and attend upcoming CS, Data Science, and Engineering Career and Networking Fairs at UW</h2>
           <br>
           <a style="background-color:#ffffff;color:#26003d;height:40px;font-family:'Square Market', 'helvetica neue', helvetica, arial, sans-serif;letter-spacing:1px;line-height:38px;padding:0 28px;border-radius:3px;font-weight:500;font-size:14px;cursor:pointer;display:inline-block;"
             href="https://goo.gl/forms/jfmTmBDMeJ9MI0T33">Add your event</a>
@@ -177,7 +177,522 @@
   <div class="events">
     <div class="container">
       <div class="row">
-
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/voy.jpg" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Voyager Office Hours</h2>
+                <h4 class="ng-binding">Oct. 4, 2017, Paul G. Allen Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden15 = !showHidden15;showEmail15=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail15 = !showEmail15;showHidden15=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail15">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail15 = !showEmail15">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Voyager Office Hours">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden15">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Voyager Office Hours</h1>
+                <p class="ng-binding">11:00AM Wednesday, October 4th, 2017 @ Paul G. Allen Atrium</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden15 = !showHidden15">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Voyager Capital will resume their open venture office hour first Wednesdays at 11 am in the CSE atrium. Any school affiliates with an interest in starting or joining a startup company are welcome to join to discuss things like what it takes to form a corporation, how to raise investor capital, what kind of roles there are for CSE grads in startups, etc.</p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+              </div>
+            </div>
+            <a ng-click="showHidden15 = !showHidden15;showEmail15 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/microsoft.png" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Microsoft Office Hours</h2>
+                <h4 class="ng-binding">Oct. 4, 2017, Paul G. Allen Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden9 = !showHidden9;showEmail9=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail9 = !showEmail9;showHidden9=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail9">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail9 = !showEmail9">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Microsoft Office Hours">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden9">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Microsoft Office Hours</h1>
+                <p class="ng-binding">1:00PM Wednesday, October 4th, 2017 @ Paul G. Allen Building Atrium</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden9 = !showHidden9">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">
+        Office Hours! Take advantage of 1:1 time with Kelsey Saboori, the Microsoft Recruiter to ask questions about the recruiting timeline, potential technical interview opportunities and resume tips and tricks.  </p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden9 = !showHidden9;showEmail9 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/nut.jpg" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Nutanix Meet and Greet</h2>
+                <h4 class="ng-binding">Oct. 5, 2017, Paul G. Allen Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden10 = !showHidden10;showEmail10=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail10 = !showEmail10;showHidden10=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail10">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail10 = !showEmail10">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Nutanix Meet and Greet">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden10">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Nutanix Meet and Greet</h1>
+                <p class="ng-binding">1:00PM Thursday, October 5th, 2017 @ Paul G. Allen Building Atrium</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden10 = !showHidden10">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Meet one on one with the talented Nutanix recruiting team! Nutanix goes beyond hyperconverged infrastructure to deliver a software-defined enterprise cloud that can run any application at any scale. Free bubble tea included!  </p>
+                      </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Bubble Tea</li>
+              </div>
+            </div>
+            <a ng-click="showHidden10 = !showHidden10;showEmail10 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/gore.png" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Gore InfoSession</h2>
+                <h4 class="ng-binding">Oct. 9, 2017, Husky Union Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden12 = !showHidden12;showEmail12=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail12 = !showEmail12;showHidden12=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail12">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail12 = !showEmail12">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Gore InfoSession">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden12">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Gore InfoSession</h1>
+                <p class="ng-binding">5:30PM Monday, October 8th, 2017 @ Husky Union Building</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden12 = !showHidden12">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Come join us to learn about how Gore's expertise in one polymer has allowed Gore to become an industry leader in manufacturing diverse products, and why at Gore we work in a corporate structure and culture unlike any other. All majors welcome!</p>
+                      </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden12 = !showHidden12;showEmail12 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/intel.png" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Intel InfoSession</h2>
+                <h4 class="ng-binding">Oct. 9, 2017, Electrical Engineering Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden13 = !showHidden13;showEmail13=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail13 = !showEmail13;showHidden13=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail13">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail13 = !showEmail13">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Intel InfoSession">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden13">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Intel InfoSession</h1>
+                <p class="ng-binding">6:00PM Monday, October 9th, 2017 @ Electrical Engineering Building Rm 125</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden13 = !showHidden13">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Meet with Intel recruiting at this info session! Learn about the challanging and competitive workshop that Intel offers, and about full-time and internship positions at Intel.  </p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden13 = !showHidden13;showEmail13 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/google.png" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Google Office Hours</h2>
+                <h4 class="ng-binding">Oct. 10, 2017, Paul G. Allen Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden11 = !showHidden11;showEmail11=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail11 = !showEmail11;showHidden11=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail11">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail11 = !showEmail11">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Google Office Hours">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden11">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Google Office Hours</h1>
+                <p class="ng-binding">11:30AM Tuesday, October 10th, 2017 @ Paul G. Allen Building 2nd Floor Landing</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden11 = !showHidden11">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Meet one on one with the recruiters at Google! Get resume advice and make connections with the largest technology company in the world.</p>
+                      </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden11 = !showHidden11;showEmail11 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
         <div class="singleEvent ng-scope">
           <div class="event">
             <div class="row">
@@ -327,7 +842,7 @@
             <div class="row">
               <div class="col-sm-5">
                 <h3><b>ABOUT</b></h3>
-                <p class="ng-binding">Come chat with AirBnB engineers about engineering methodologies, application architecture, and the technical details of building a large JavaScript application for a tiny screen. Learn about building solutions to problems that need to be scalable, performant, and elegant, and engage with AirBnB engineers about new grad and intern oppertunities at AirBnB.</p>
+                <p class="ng-binding">Come chat with AirBnB engineers about engineering methodologies, application architecture, and the technical details of building a large JavaScript application for a tiny screen. Learn about building solutions to problems that need to be scalable, performant, and elegant, and engage with AirBnB engineers about new grad and intern oppertunities at AirBnB. This event is geared towards ACM-W members.</p>
               </div>
               <div class="col-sm-5 col-sm-offset-1">
                 <h3><b>EVENT DETAILS</b></h3>
@@ -442,6 +957,264 @@
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/redfin.jpg" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Redfin Tech Talk</h2>
+                <h4 class="ng-binding">Oct. 17, 2017, Electrical Engineering Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden16 = !showHidden16;showEmail16=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail16 = !showEmail16;showHidden16=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail16">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail16 = !showEmail16">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Redfin Tech Talk">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden16">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Redfin Tech Talk</h1>
+                <p class="ng-binding">6:00PM Tuesday, October 17th, 2017 @ Electrical Engineering Building Rm 125</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden16 = !showHidden16">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Connect with recruiters and engineers at the Redfin tech talk at University of Washington! Learn what it's like to work at one of the largest real estate employers in the country, and get your resume reviewed for full-time and internship positions at Redfin.</p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden16 = !showHidden16;showEmail16 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/alaska.png" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Alaska Airlines Workshop</h2>
+                <h4 class="ng-binding">Oct. 18, 2017, Mary Gates Hall</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden7 = !showHidden7;showEmail7=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail7 = !showEmail7;showHidden7=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail7">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail7 = !showEmail7">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Alaska Airlines Workshop">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden7">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Alaska Airlines Workshop</h1>
+                <p class="ng-binding">12:30PM Wednesday, October 18th, 2017 @ Mary Gates Hall Rm 134</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden7 = !showHidden7">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Spend your lunch hour learning from industry experts! Come hear straight from the recruiter about what students can do or say, to make themselves stand out and make a good impression.</p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Workshop</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden7 = !showHidden7;showEmail7 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/cisco.gif" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Cisco System InfoSessions</h2>
+                <h4 class="ng-binding">Oct. 18, 2017, Mary Gates Hall</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden8 = !showHidden8;showEmail8=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail8 = !showEmail8;showHidden8=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail8">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail8 = !showEmail8">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Cisco System InfoSessions">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden8">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Cisco System InfoSessions</h1>
+                <p class="ng-binding">7:00PM Wednesday, October 18th, 2017 @ Mary Gates Hall Rm 134</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden8 = !showHidden8">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Come see if a role in software engineering at Cisco is a fit for you! With our headquarters in San Jose, CA and offices locally in Seattle, we have a number of opportunities for students looking for summer internships as well as full time opportunities throughout the United States.</p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden8 = !showHidden8;showEmail8 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
                 <img ng-src="./UWFairs_files/logo.png" width="60px">
               </div>
               <div class="col-xs-9">
@@ -528,6 +1301,92 @@
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
+                <img ng-src="./UWFairs_files/oracle.jpg" width="60px">
+              </div>
+              <div class="col-xs-9">
+                <br>
+                <h2 class="ng-binding">Oracle InfoSession</h2>
+                <h4 class="ng-binding">Oct. 23, 2017, Husky Union Building</h4>
+              </div>
+            </div>
+            <div class="row">
+              <center>
+                <div>
+                  <button style="margin-right: 5px;" class="go" ng-click="showHidden14 = !showHidden14;showEmail14=false">Details</button>
+                  <button style="margin-left: 5px;" class="go" ng-click="showEmail14 = !showEmail14;showHidden14=false">Attend</button>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="email ng-hide" ng-show="showEmail14">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Enter your email</h1>
+                <p class="ng-binding">We will send you a reminder before the event and pass it on to recruiters.</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showEmail14 = !showEmail14">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form emailForm ng-pristine ng-valid" action="https://docs.google.com/forms/d/e/1FAIpQLSfLotxr1Lno2E128YHqanfIcNcmRJN90D7bEnAKhSyWNmpRvA/formResponse" target="hiddenFrame" method="POST">
+                  <div class="input-group">
+                    <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
+                    <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@uw.edu</span>
+                    <input type="hidden" name="entry.1026163718" value="Oracle InfoSession">
+                  </div><br>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <button type="submit" class="mobileGo" ng-click="submitEmail($index)">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+                <br>
+                <p class="submitted0" style="display:none;">Your email has been added to the list</p>
+              </div>
+            </div>
+          </div>
+          <div class="details ng-hide" ng-show="showHidden14">
+            <div class="row">
+              <div class="col-xs-8">
+                <h1 class="ng-binding">Oracle InfoSession</h1>
+                <p class="ng-binding">6:00PM Monday, October 23th, 2017 @ Husky Union Building Rm 145</p>
+              </div>
+              <div class="col-sm-4">
+                <button class="go-dark" style="float:right; padding: 10px 15px 10px 15px;" ng-click="showHidden14 = !showHidden14">X</button>
+              </div>
+            </div><br>
+            <div class="row">
+              <div class="col-sm-5">
+                <h3><b>ABOUT</b></h3>
+                <p class="ng-binding">Calling all aspiring Data Scientists! Oracle is looking for up-and-coming Data Science talent to join the Oracle Data Cloud (ODC) Rotational Analyst (RA) Program. We are looking for the next class of RAs to bring innovation to the ODC, using data assets to provide insights and to build new analytic products to better serve our current and future strategic partners across the digital marketing ecosystem. This session is for the Oracle Rotational Analyst program.</p>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1">
+                <h3><b>EVENT DETAILS</b></h3>
+                <li class="ng-binding">Recruiting Event</li>
+                <li class="ng-binding">Meet with Recruiters/Engineers</li>
+                <li class="ng-binding">Free Swag</li>
+              </div>
+            </div>
+            <a ng-click="showHidden14 = !showHidden14;showEmail14 = true">
+              <div class="attend">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <center>
+                      <h1>ATTEND</h1>
+                    </center>
+                  </div>
+                </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="singleEvent ng-scope">
+          <div class="event">
+            <div class="row">
+              <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
                 <img ng-src="./UWFairs_files/CSElogo2text_1000.png" width="60px">
               </div>
               <div class="col-xs-9">
@@ -587,7 +1446,7 @@
             <div class="row">
               <div class="col-sm-5">
                 <h3><b>ABOUT</b></h3>
-                <p class="ng-binding">The Industry Affiliate Recruting Fair is an annual career fair held by the Paul G. Allen school of Computer Science and Engineering. Industry Affiliates such as Google, Facebook, and Microsoft are invited to interact with students for full-time, new grad, and internship positions. CSE students only.</p>
+                <p class="ng-binding">The Industry Affiliate recruiting Fair is an annual career fair held by the Paul G. Allen school of Computer Science and Engineering. Industry Affiliates such as Google, Facebook, and Microsoft are invited to interact with students for full-time, new grad, and internship positions. CSE students only.</p>
               </div>
               <div class="col-sm-5 col-sm-offset-1">
                 <h3><b>EVENT DETAILS</b></h3>
@@ -647,7 +1506,7 @@
                   <div class="input-group">
                     <input type="text" name="entry.833131861" class="form-control" id="emailField0" placeholder="Email" value="">
                     <span class="input-group-addon" aria-describedby="basic-addon2" id="basic-addon2">@cs.uw.edu</span>
-                    <input type="hidden" name="entry.1026163718" value="CSE Established Companies Career Fair">
+                    <input type="hidden" name="entry.1026163718" value="CSE Startup Companies Career Fair">
                   </div><br>
                   <div class="row">
                     <div class="col-xs-12">
@@ -663,7 +1522,7 @@
           <div class="details ng-hide" ng-show="showHidden6">
             <div class="row">
               <div class="col-xs-8">
-                <h1 class="ng-binding">CSE Established Companies Career Fair</h1>
+                <h1 class="ng-binding">CSE Startup Companies Career Fair</h1>
                 <p class="ng-binding">1:00PM Wednesday, October 25th, 2017 @ Paul G. Allen Center</p>
               </div>
               <div class="col-sm-4">
@@ -673,7 +1532,7 @@
             <div class="row">
               <div class="col-sm-5">
                 <h3><b>ABOUT</b></h3>
-                <p class="ng-binding">The Industry Affiliate Recruting Fair is an annual career fair held by the Paul G. Allen school of Computer Science and Engineering. Industry Affiliates such as Qualtrics, RetailMeNot, and PayScale are invited to interact with students for full-time, new grad, and internship positions. CSE students only.</p>
+                <p class="ng-binding">The Industry Affiliate recruiting Fair is an annual career fair held by the Paul G. Allen school of Computer Science and Engineering. Industry Affiliates such as Qualtrics, RetailMeNot, and PayScale are invited to interact with students for full-time, new grad, and internship positions. CSE students only.</p>
               </div>
               <div class="col-sm-5 col-sm-offset-1">
                 <h3><b>EVENT DETAILS</b></h3>
@@ -703,10 +1562,10 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-5 col-xs-offset-1">
-                <p>Built by <a href="https://octouw.github.io/">OCTO UW</a> (we're recruting!)</p>
+                <p>Built by <a href="https://octouw.github.io/">OCTO UW</a> (we're recruiting!)</p>
               </div>
               <div class="col-xs-5">
-                <p class="text-right">Inspired by <a href="https://csfairs.com/">CSFairs</a></p>
+                <p class="text-right">Inspired by <a href="https://csfairs.com/">CSFairs</a>. <a href="mailto:jzda@cs.washington.edu"">Contact us.</a></p>
               </div>
             </div>
           </div>
