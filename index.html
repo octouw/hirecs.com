@@ -174,10 +174,18 @@
     </div>
   </div>
 
+  <script>
+    var d = new Date().getTime();
+    var eventOne = new Date(2017, 9, 4).getTime();
+
+    window.onload = function() {
+      document.getElementById("showEvent").innerHTML= (d < eventOne) ;
+    }
+  </script>
   <div class="events">
     <div class="container">
       <div class="row">
-        <div class="singleEvent ng-scope">
+        <div class="singleEvent ng-scope" ng-show="showEvent">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
