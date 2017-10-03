@@ -175,20 +175,51 @@
   </div>
 
   <script>
-    var d = new Date().getTime();
-    var eventOne = new Date(2017, 9, 4).getTime();
+    var d = new Date(2017, 9, 14).getTime();
+    var event1 = new Date(2017, 9, 5).getTime();
+    var event2 = new Date(2017, 9, 5).getTime();
+    var event3 = new Date(2017, 9, 6).getTime();
+    var event4 = new Date(2017, 9, 10).getTime();
+    var event5 = new Date(2017, 9, 10).getTime();
+    var event6 = new Date(2017, 9, 11).getTime();
+    var event7 = new Date(2017, 9, 11).getTime();
+    var event8 = new Date(2017, 9, 12).getTime();
+    var event9 = new Date(2017, 9, 15).getTime();
+    var event10 = new Date(2017, 9, 18).getTime();
+    var event11 = new Date(2017, 9, 19).getTime();
+    var event12 = new Date(2017, 9, 19).getTime();
+    var event13 = new Date(2017, 9, 24).getTime();
+    var event14 = new Date(2017, 9, 24).getTime();
+    var event15 = new Date(2017, 9, 25).getTime();
+    var event16 = new Date(2017, 9, 26).getTime();
 
     window.onload = function() {
+      var appElement = document.querySelector('[ng-app=csfair]');
       var $scope = angular.element(appElement).scope();
       $scope.$apply(function() {
-        $scope.showEvent = d < eventOne;
+        $scope.showEvent1 = d < event1;
+        $scope.showEvent2 = d < event2;
+        $scope.showEvent3 = d < event3;
+        $scope.showEvent4 = d < event4;
+        $scope.showEvent5 = d < event5;
+        $scope.showEvent6 = d < event6;
+        $scope.showEvent7 = d < event7;
+        $scope.showEvent8 = d < event8;
+        $scope.showEvent9 = d < event9;
+        $scope.showEvent10 = d < event10;
+        $scope.showEvent11 = d < event11;
+        $scope.showEvent12 = d < event12;
+        $scope.showEvent13 = d < event13;
+        $scope.showEvent14 = d < event14;
+        $scope.showEvent15 = d < event15;
+        $scope.showEvent16 = d < event16;
       });
     }
   </script>
   <div class="events">
     <div class="container">
       <div class="row">
-        <div class="singleEvent ng-scope" id="showEvent" ng-show="showEvent">
+        <div class="singleEvent ng-scope" ng-show="showEvent1">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -272,8 +303,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show=showEvent1>
+        <div class="singleEvent ng-scope" ng-show="showEvent2">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -359,8 +390,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent2">
+        <div class="singleEvent ng-scope" ng-show="showEvent3">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -445,8 +476,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent3">
+        <div class="singleEvent ng-scope" ng-show="showEvent4">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -531,8 +562,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent4">
+        <div class="singleEvent ng-scope" ng-show="showEvent5">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -617,8 +648,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent5">
+        <div class="singleEvent ng-scope" ng-show="showEvent6">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -703,8 +734,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent6">
+        <div class="singleEvent ng-scope" ng-show="showEvent7">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height: 95px;" align="right">
@@ -789,8 +820,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent7">
+        <div class="singleEvent ng-scope" ng-show="showEvent8">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height: 95px;"  align="right">
@@ -875,9 +906,8 @@
             </div>
           </div>
         </div>
-        <hr>
-
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent8">
+        <div class="singleEvent ng-scope" ng-show="showEvent9">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height: 95px;" align="right">
@@ -963,8 +993,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent9">
+        <div class="singleEvent ng-scope" ng-show="showEvent10">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -1049,8 +1079,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent10">
+        <div class="singleEvent ng-scope" ng-show="showEvent11">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -1135,8 +1165,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent11">
+        <div class="singleEvent ng-scope" ng-show="showEvent12">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -1221,8 +1251,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent12">
+        <div class="singleEvent ng-scope" ng-show="showEvent13">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -1307,8 +1337,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent13">
+        <div class="singleEvent ng-scope" ng-show="showEvent14">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -1393,8 +1423,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent14">
+        <div class="singleEvent ng-scope" ng-show="showEvent15">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
@@ -1479,8 +1509,8 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="singleEvent ng-scope">
+        <hr ng-show="showEvent15">
+        <div class="singleEvent ng-scope" ng-show="showEvent16">
           <div class="event">
             <div class="row">
               <div class="col-md-1 col-sm-2 col-xs-3" style="line-height:95px;" align="right">
