@@ -1,4 +1,4 @@
-var d = new Date(2017, 9, 9).getTime();
+var d = new Date().getTime();
 var eventDates = [
   new Date(2017, 9, 5).getTime(),
   new Date(2017, 9, 5).getTime(),
